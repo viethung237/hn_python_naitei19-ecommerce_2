@@ -9,7 +9,11 @@ __pycache__
 *.pyc 
 # C extensions
 *.so
-
+# image
+media/
+media_root/
+# font
+svgs/
 # Distribution / packaging
 .Python
 build/
