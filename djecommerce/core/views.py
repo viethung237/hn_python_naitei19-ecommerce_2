@@ -28,3 +28,8 @@ def product_list(request):
 
         }
         )
+#search
+def search(request):
+    q = request.GET['q']
+    data  = Product.objects.filter(title_icontains=q).order_by('-id')
+    return render(request, 'search.html', {'data': data}) 
